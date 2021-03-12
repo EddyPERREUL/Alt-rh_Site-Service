@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Service Exercice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header-section">
+        <img
+          class="header-section__img"
+          src="img/codefactor.svg"
+          alt="logo code factor"
+        />
+        <adress class="header-section__adress">
+          <p>
+            <strong>Adroiti Technologies</strong><br />
+            <i class="ico fas fa-map-marker-alt"></i>4136 Del Rey Ave, Marina
+            Del Rey, CA, 90292, USA <br />
+            <i class="ico fas fa-envelope"></i
+            ><a href="mailto:privacy@codefactor.io">privacy@codefactor.io</a
+            ><br />
+          </p>
+        </adress>
+      </section>
+
+      <nav class="header-nav">
+        <ul class="nav--ul">
+          <li class="nav--ul__li">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+          </li>
+
+          <li class="nav--ul__li border-left">
+            <a href="#about">A propos</a>
+          </li>
+
+          <li class="nav--ul__li border-left">
+            <a class="nav--ul--li__a" href="#services">Services</a>
+          </li>
+
+          <li class="nav--ul__li border-left">
+            <a href="#projet">Projets</a>
+          </li>
+
+          <li class="nav--ul__li border-left">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="about--section">
+        <video controls class="about__video">
+          <source src="video/pexels-kindel.mp4" type="video/mp4" />
+          <p>Votre navigateur ne prend pas en charge les vidéos</p>
+        </video>
+        <p class="about__p">
+          CodeFactor integrates with Slack to send code quality notifications
+          for every commit in branch or pull request. To install, go to
+          repository Settings page.
+        </p>
+      </section>
+      <!-- Fin about-->
+
+      <section id="services" class="services--section">
+        <div class="services__all">
+          <article class="services__item">
+            <i class="services__icon fab fa-servicestack"></i>
+            <h2>SLACK INTEGRATION</h2>
+            <p>
+              Nunc quis tincidunt eros, vitae scelerisque nisi. Fusce
+              consectetur mollis egestas. In volutpat at arcu in consectetur.
+              Quisque porta arcu sed velit elementum auctor. Maecenas at eros et
+              nulla feugiat lobortis et quis tellus.
+            </p>
+          </article>
+          <article class="services__item">
+            <i class="services__icon fas fa-laptop-house"></i>
+            <h2>CONTROL & ANALYSE</h2>
+            <p>
+              Nunc quis tincidunt eros, vitae scelerisque nisi. Fusce
+              consectetur mollis egestas. In volutpat at arcu in consectetur.
+              Quisque porta arcu sed velit elementum auctor. Maecenas at eros et
+              nulla feugiat lobortis et quis tellus.
+            </p>
+          </article>
+          <article class="services__item">
+            <i class="services__icon fas fa-code-branch"></i>
+            <h2>WORKFLOW</h2>
+            <p>
+              Nunc quis tincidunt eros, vitae scelerisque nisi. Fusce
+              consectetur mollis egestas. In volutpat at arcu in consectetur.
+              Quisque porta arcu sed velit elementum auctor. Maecenas at eros et
+              nulla feugiat lobortis et quis tellus.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Fin services -->
+
+      <section id="projet" class="projets--section">
+        <div class="projets__all">
+          <figure class="projets__item">
+            <img class="projets--item__img" src="img/projetone.jpg" alt="one" />
+            <figcaption>Développement Web</figcaption>
+          </figure>
+          <figure class="projets__item">
+            <img class="projets--item__img" src="img/projettwo.jpg" alt="one" />
+            <figcaption>Hébergement</figcaption>
+          </figure>
+          <figure class="projets__item">
+            <img
+              class="projets--item__img"
+              src="img/projetthree.jpg"
+              alt="one"
+            />
+            <figcaption>Gestion de contrat</figcaption>
+          </figure>
+          <figure class="projets__item">
+            <img
+              class="projets--item__img"
+              src="img/projetfour.jpg"
+              alt="one"
+            />
+            <figcaption>Application mobile</figcaption>
+          </figure>
+          <figure class="projets__item">
+            <img
+              class="projets--item__img"
+              src="img/projetfive.jpg"
+              alt="one"
+            />
+            <figcaption>Chef de projet</figcaption>
+          </figure>
+          <figure class="projets__item">
+            <img class="projets--item__img" src="img/projetsix.jpg" alt="one" />
+            <figcaption>Espace co-working</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- Fin projets -->
+
+      <section id="contact" class="contact--section">
+        <form action="" method="post" class="contact--form">
+          <div class="form">
+            <label for="name" class="form__label">Prénom & nom</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Doe"
+              class="form__input"
+            />
+          </div>
+          <div class="form">
+            <label for="mobile" class="form__label">Téléphone</label>
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              placeholder="+336 01 02 03 04"
+              class="form__input"
+            />
+          </div>
+          <div class="form">
+            <label for="mail" class="form__label">Courriel</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="John.Doe@gmail.com"
+              class="form__input"
+            />
+          </div>
+          <div class="form">
+            <label for="request" class="form__label">Demande</label>
+            <textarea name="request" id="request" class="form__area"></textarea>
+          </div>
+          <div class="form--submit">
+            <input type="submit" value="Soumettre" class="form__submit" />
+          </div>
+        </form>
+      </section>
+      <!-- Fin contact -->
+    </main>
+
+    <footer>
+      <section class="footer--section">
+        <div class="footer--link">
+          <ul class="footer--link__ul">
+            <li class="footer--link__li">
+              <a href="https://fr.linkedin.com/company/codefactory"
+                ><i class="footer--ico fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="footer--link__li">
+              <a href="https://twitter.com/codefactor_io?lang=fr"
+                ><i class="footer--ico fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li class="footer--link__li">
+              <a href="https://github.com/marketplace/codefactor"
+                ><i class="footer--ico fab fa-github-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer--logo">
+          <img
+            class="footer-logo__img"
+            src="img/codefactor.svg"
+            alt="logo pied de page"
+          />
+        </div>
+        <div class="btn--top">
+          <a href="#"><i class="btn--top__ico fas fa-arrow-up"></i></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/54d6ef0b26.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
